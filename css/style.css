@@ -3,7 +3,12 @@
 }
 
 body {
+    background-color: #f8f9fa;
     margin: 75px;
+}
+
+aside {
+    
 }
 
 .title {
@@ -13,6 +18,18 @@ body {
 
 .center {
     text-align: center;
+}
+
+.nameNumber {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.numberPopUp {
+    color: white;
+    padding: 2px 11px;
+    background-color: #6c757d;
+    
 }
 
 .footer {
