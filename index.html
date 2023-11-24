@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
     <title>ProgrammingforWebForms</title>
@@ -13,7 +14,7 @@
         <img src="./img/CCTBLogo.png" alt="CCTB Logo" class="img">
         <p class="title">Checkout form</p>
         <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be
-            triggered by attempting to submit the form without completing it</p>
+            triggered by attempting to submit the form without completing it.</p>
     </header>
     <article>
         <aside>
@@ -61,11 +62,11 @@
             <div class="row mb-3">
                 <div class="col">
                     <label class="form-label">First Name</label>
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    <input type="text" class="form-control" aria-label="First name">
                 </div>
                 <div class="col">
                     <label class="form-label">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    <input type="text" class="form-control" aria-label="Last name">
                 </div>
             </div>
             <div class="row mb-3">
@@ -89,14 +90,14 @@
             </div>
             <div class="row mb-3">
                 <div class="col">
-                    <label class="form-label">Adderess 2 <span>(Optional)</span></label>
+                    <label class="form-label">Adderess 2 <span class="gray-text">(Optional)</span></label>
                     <input type="text" class="form-control" placeholder="Apartment or Suite" aria-label="Adderess">
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="country">
                     <label class="form-label">Country</label>
-                    <select class="form-select" id="inputGroupSelect01">
+                    <select class="form-select gray-text" id="inputGroupSelect01">
                         <option selected>Choose...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -105,7 +106,7 @@
                 </div>      
                 <div class="state">
                     <label class="form-label">State</label>
-                    <select class="form-select" id="inputGroupSelect01">
+                    <select class="form-select gray-text" id="inputGroupSelect01">
                         <option selected>Choose...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>

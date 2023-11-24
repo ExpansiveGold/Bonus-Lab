@@ -6,13 +6,17 @@ window.onload = function date() {
 
 const element = document.getElementById("columns");
 
-if (screen.width < 800) {
-    setTimeout(() => {
-        element.className = "row row-cols-2 mb-3"
-    }, 100); 
-} 
-else if (screen.width > 801) {
-    setTimeout(() => {
-        element.className = "row row-cols-4 mb-3"
-    }, 100); 
-}   
+function resize() {
+    if ($(window).width() < 800) {
+        $('#columns').removeClass('row-cols-4')
+        $('#columns').addClass('row-cols-2')
+    } else {
+        $('#columns').removeClass('row-cols-2')
+        $('#columns').addClass('row-cols-4')
+    }
+}
+
+$(document).ready(function() {
+    $(window).resize(resize)
+    resize()
+})
