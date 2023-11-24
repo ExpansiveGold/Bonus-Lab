@@ -10,7 +10,7 @@
 </head>
 <body class="bg-light">
     <header class="center mb-5">
-        <img src="./img/CCTBLogo.png" alt="CCTB Logo" height="70px" width="320px" class="mb-5">
+        <img src="./img/CCTBLogo.png" alt="CCTB Logo" class="img">
         <p class="title">Checkout form</p>
         <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be
             triggered by attempting to submit the form without completing it</p>
@@ -23,7 +23,10 @@
             </div>
             <ul class="list-group mb-3">
                 <li class="list-group-item">
-                    <p class="nameNumber"><span>Product name</span><span class="text-secondary">$12</span></p>
+                    <p class="nameNumber">
+                        <span>Product name</span>
+                        <span class="text-secondary">$12</span>
+                    </p>
                     <span class="text-secondary fontSmaller">Brief description</span>
                 </li>
                 <li class="list-group-item">
@@ -60,7 +63,7 @@
                     <label class="form-label">First Name</label>
                     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
                 </div>
-                <div class="col mb-3">
+                <div class="col">
                     <label class="form-label">Last Name</label>
                     <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                 </div>
@@ -68,7 +71,7 @@
             <div class="row mb-3">
                 <label class="form-label">Username</label>
                 <div class="input-group">
-                    <span class="input-group-text gray-bg gray-text" id="basic-addon1" disabled>@</span>
+                    <span class="input-group-text gray-bg gray-text" id="basic-addon1">@</span>
                     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                 </div>  
             </div>
@@ -158,8 +161,8 @@
                     <input type="text" class="form-control" aria-label="NumberCard">
                 </div>
             </div>
-            <div class="row row-cols-4 mb-3">
-                <div class="col">
+            <div class="row row-cols-4 mb-3" id="columns">
+                <div class="col mb-3">
                     <label class="form-label">Expiration</label>
                     <input type="text" class="form-control" aria-label="Expiration">
                 </div>

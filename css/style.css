@@ -5,21 +5,8 @@
     box-sizing: border-box;
 }
 
-@media only screen and (width <= 800px) {
-    body {
-        margin: 75px;
-    }
-    aside {
-        width: 80%;
-    }
-    
-    form {
-        width: 80%;
-    }
-}
-
 body {
-    margin: 75px;
+    margin: 8%;
 }
 
 aside {
@@ -33,6 +20,12 @@ form {
 
 li p {
     margin-bottom: 0%;
+}
+
+.img {
+    height: 70px;
+    width: 320px;
+    margin-bottom: 48px;
 }
 
 .gray-text {
@@ -80,4 +73,47 @@ li p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: 8%;
+    }
+    aside {
+        width: 100%;
+        float: none;
+    }
+    
+    form {
+        width: 100%;
+    }
+
+    .img {
+        height: 60px;
+        width: 260px;
+        margin-bottom: 16px;
+    }
+
+    .country {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+    .state {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+    .zip {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .colSpan1 {
+        grid-column: 1 / span 2;
+    }
+
+    .colSpan2 {
+        grid-column: 3 / span 2;
+    }
 }
