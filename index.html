@@ -128,6 +128,50 @@
                 </label>
             </div>
             <hr>
+            <p class="fs-5">Payment</p>
+            <div class="form-check">
+                <input class="form-check-input gray-bg" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label text-dark" for="flexRadioDefault1">
+                    Credit card
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input gray-bg" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label text-dark" for="flexRadioDefault2">
+                    Debit card
+                </label>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input gray-bg" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label text-dark" for="flexRadioDefault2">
+                    Paypal
+                </label>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label class="form-label">Name on card</label>
+                    <input type="text" class="form-control" aria-label="NameCard">
+                    <span class="text-secondary fontSmaller">Full name as displayed on card</span>
+                </div>
+                <div class="col">
+                    <label class="form-label">Credit card number</label>
+                    <input type="text" class="form-control" aria-label="NumberCard">
+                </div>
+            </div>
+            <div class="row row-cols-4 mb-3">
+                <div class="col">
+                    <label class="form-label">Expiration</label>
+                    <input type="text" class="form-control" aria-label="Expiration">
+                </div>
+                <div class="col mb-3">
+                    <label class="form-label">CVV</label>
+                    <input type="text" class="form-control" aria-label="CVV">
+                </div>
+            </div>
+            <hr>
+            <div class="d-grid gap-2 mb-5">
+                <button class="btn btn-primary" type="submit">Continue to checkout</button>
+            </div>
         </form>
     </article>
     <footer class="footer">

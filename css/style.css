@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+@media only screen and (width <= 800px) {
+    body {
+        margin: 75px;
+    }
+    aside {
+        width: 80%;
+    }
+    
+    form {
+        width: 80%;
+    }
+}
+
 body {
     margin: 75px;
 }
